@@ -1,0 +1,167 @@
+body
+{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: black;
+    background-color:white;
+    text-align: center;  
+
+}
+
+/*Video header*/
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url("../img/catrascendence.jpg") black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+/*text animation*/
+
+.content {
+	font-family: "Montserrat";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+	letter-spacing: 1px;
+}
+
+h2 {
+	background-image: url(../img/colorgradient.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text; /*para que el gif se ponga como textura del texto*/
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+	line-height: .75;
+	margin: 10px 0;
+}
+
+.nekostitlemulticolor {
+	background-image: url(../img/colorgradient.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text; /*para que el gif se ponga como textura del texto*/
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: .75;
+	margin: 10px 0;
+}
+
+
+/*Propiedades img*/
+img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/*sub-subtítulo xd*/
+span {
+  color: #7e5cce;
+  font-size:  13px;
+}
+
+/*input*/
+input[type="text"] {
+  box-sizing: border-box;
+  width: 15%;
+  height: calc(3em + 2px);
+  margin: 0 0 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1.5em;
+  background: #fff;
+  resize: none;
+  outline: none;
+}
+input[type="text"][required]:focus {
+  border-color: #00bafa;
+}
+input[type="text"][required]:focus + label[Suggestions]:before {
+  color: #00bafa;
+}
+input[type="text"][required]:focus + label[Suggestions]:before,
+input[type="text"][required]:valid + label[Suggestions]:before {
+  transition-duration: 0.2s;
+  -webkit-transform: translate(0, -1.5em) scale(0.9, 0.9);
+          transform: translate(0, -1.5em) scale(0.9, 0.9);
+}
+input[type="text"][required]:invalid + label[Suggestions][alt]:before {
+  content: attr(alt);
+}
+input[type="text"][required] + label[Suggestions] {
+  display: block;
+  pointer-events: none;
+  line-height: 1.25em;
+  margin-top: calc(-3em - 2px);
+  margin-bottom: calc((3em - 1em) + 2px);
+}
+input[type="text"][required] + label[Suggestions]:before {
+  content: attr(Suggestions);
+  display: inline-block;
+  margin: 0 calc(1em + 2px);
+  padding: 0 2px;
+  color: #898989;
+  white-space: nowrap;
+  transition: 0.3s ease-in-out;
+  background-image: linear-gradient(to bottom, #fff, #fff);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*marquee bg image*/
+marquee {
+  background-image: url("../img/spacebg.jpg");
+  background-color: #b14fdf;
+  color: white;
+ }
