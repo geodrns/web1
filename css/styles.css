@@ -6,7 +6,10 @@ body
     text-align: center;  
 
 }
-
+/*cursor*/
+.custom {
+  cursor: url("../img/uwu.png"), auto;
+}
 /*Video header*/
 header {
   position: relative;
