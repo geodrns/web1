@@ -4,7 +4,7 @@ body
     color: black;
     background-color:white;
     text-align: center;  
-    cursor: url("../img/click.png"), pointer;
+    cursor: url("../img/pointer.png"), default;
 
 }
 
@@ -96,4 +96,3 @@ input[type="text"][required] + label[Suggestions]:before {
   background-repeat: no-repeat;
   background-position: center;
 }
-

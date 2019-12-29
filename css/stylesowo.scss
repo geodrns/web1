@@ -4,63 +4,12 @@ body
     color: black;
     background-color:white;
     text-align: center;  
-    cursor: url("../img/pointer.png"), default ;
-    /*cursor: url("../img/click.png"), pointer;*/
+    cursor: url("../img/click.png"), pointer;
 
 }
 
-/*Video header*/
-header {
-  position: relative;
-  background-color: black;
-  height: 75vh;
-  min-height: 25rem;
-  width: 100%;
-  overflow: hidden;
-}
-
-header video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-header .container {
-  position: relative;
-  z-index: 2;
-}
-
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url("../img/catrascendence.jpg") black no-repeat center center scroll;
-  }
-  header video {
-    display: none;
-  }
-}
 
 /*text animation*/
-
 .content {
 	font-family: "Montserrat";
 	text-align: center;
@@ -85,19 +34,6 @@ h2 {
 	line-height: .75;
 	margin: 10px 0;
 }
-
-.nekostitlemulticolor {
-	background-image: url(../img/colorgradient.gif);
-	background-size: cover;
-	color: transparent;
-	-moz-background-clip: text; /*para que el gif se ponga como textura del texto*/
-	-webkit-background-clip: text;
-	text-transform: uppercase;
-	font-size: 24px;
-	line-height: .75;
-	margin: 10px 0;
-}
-
 
 /*Propiedades img*/
 img {
@@ -160,10 +96,3 @@ input[type="text"][required] + label[Suggestions]:before {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/*marquee bg image*/
-marquee {
-  background-image: url("../img/spacebg.jpg");
-  background-color: #b14fdf;
-  color: white;
- }
