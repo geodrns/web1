@@ -1,11 +1,11 @@
 @font-face {
-  font-family:'Comicfont';
-  src:url('http://fonts.googleapis.com/css?family=Comic+Sans+MS');
+  font-family: 'Comic Sans MS';
+  src: url("../comic-sans-ms/COMIC.TTF");
 }
 
 body
 {
-    font-family: "comic sans ms", "comic sans", "Comic Sans", "Comicfont", tahoma, verdana, arial;
+    font-family: "Comic Sans MS", "comic sans", "Comic Sans", "Comicfont", tahoma, verdana, arial;
     color: black;
     background-color:white;
     text-align: center;  
