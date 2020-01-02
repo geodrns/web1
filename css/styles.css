@@ -30,6 +30,17 @@ body
   cursor: url("../img/pointer.png"), default ;
 }
 
+.dark-mode {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-image:  url("../img/blackcatwallpaper.gif");
+  background-repeat:repeat;
+	background-attachment:fixed;
+	overflow:scroll;
+  color: white;
+  text-align: center;  
+  cursor: url("../img/pointer.png"), default ;
+}
+
 /*Video header*/
 header {
   position: relative;
