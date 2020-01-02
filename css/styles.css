@@ -118,8 +118,7 @@ h2 {
 
 /*Propiedades img*/
 img {
-  width: 450px;
-  height: 300px;
+  width: 90%;
   object-fit: cover;
 }
 
