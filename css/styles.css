@@ -87,7 +87,7 @@ header .overlay {
 .loader >img {
   width: 20%;
   height: 30%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .loader.hidden {
@@ -131,7 +131,7 @@ span {
 /*input*/
 input[type="text"] {
   box-sizing: border-box;
-  width: 40%;
+  width: 250px;
   height: calc(3em + 2px);
   margin: 0 0 1em;
   padding: 1em;
