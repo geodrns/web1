@@ -87,7 +87,7 @@ header .overlay {
 .loader >img {
   width: 15%;
   height: 30%;
-  object-fit: auto;
+  object-fit: cover;
 }
 
 .loader.hidden {
