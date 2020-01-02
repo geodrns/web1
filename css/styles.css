@@ -1,6 +1,11 @@
+@font-face {
+  font-family:'Comicfont';
+  src:url('http://fonts.googleapis.com/css?family=Comic+Sans+MS');
+}
+
 body
 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "comic sans ms", "comic sans", "Comic Sans", "Comicfont", tahoma, verdana, arial;
     color: black;
     background-color:white;
     text-align: center;  
@@ -85,9 +90,8 @@ header .overlay {
 }
 
 .loader >img {
-  width: 15%;
   height: 30%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .loader.hidden {
